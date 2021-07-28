@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+#movie_name {
+    width: 250px;
+    border: 2px solid gray;
+}
+
+#slideshow>img {
+    width: 100%;
+    margin: auto;
+    height: 380px;
+}
+
+#slideshow {
+    margin: 2%;
+    border: 5px solid rgb(199, 198, 198);
+}
+
+#navbar {
+    width: 90%;
+    background-color: black;
+    height: 40px;
+    margin: auto;
+    padding: 3%;
+}
+
+#navbar img {
+    float: left;
+}
+
+#logo {
+    width: 150px;
+    height: 100px;
+    margin-top: -3%;
+}
+
+#links {
+    margin-left: 80%;
+    margin-top: 1%;
+}
+
+#links a {
+    color: white;
+    padding-left: 6%;
+    font-family: "Otomanopee One", sans-serif;
+}
+
+#movie {
+    width: 40%;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    padding: 2%;
+    /* font-family: 'Style Script', cursive; */
+    /* font-size: xx-large */
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIGNUP</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet" />
+<style>
+    #signDiv {
+        display: block;
+        /* margin-top: 20%; */
+        width: 30%;
+        height: 650px;
+        background-color: rgba(0, 0, 0, 0.753);
+        border: 2px solid black;
+        margin: auto;
+        text-align: center;
+    }
+    
+    input {
+        display: block;
+        margin: auto;
+        width: 80%;
+        height: 30px;
+        margin-bottom: 3%;
+        border-radius: 10px;
+        text-align: center;
+    }
+    
+    button {
+        width: 40%;
+        height: 40px;
+        color: white;
+        background-color: black;
+        border: 2px solid white;
+        cursor: pointer;
+        font-family: "Style Script", cursive;
+        border-radius: 40px;
+    }
+    
+    h1 {
+        color: white;
+        font-family: "Style Script", cursive;
+    }
+    
+    p {
+        color: white;
+        font-family: "Style Script", cursive;
+        font-size: small;
+        margin-top: 10%;
+        text-align: center;
+    }
+    
+    #logo {
+        width: 150px;
+        height: 100px;
+        margin-top: -3%;
+    }
+    
+    #navbar {
+        width: 90%;
+        /* background-color: black; */
+        height: 40px;
+        margin: auto;
+        padding: 3%;
+        /* margin-bottom: 2%; */
+    }
+    
+    #navbar img {
+        float: left;
+    }
+    
+    #links {
+        margin-left: 80%;
+        margin-top: 1%;
+    }
+    
+    #links a {
+        color: white;
+        padding-left: 6%;
+        font-family: "Style Script", cursive;
+    }
+    
+    label {
+        color: white;
+        text-align: left;
+    }
+    
+    span {
+        color: red;
+    }
+</style>
+
+<body background="https://images.unsplash.com/photo-1478728073286-db190d3d8ce6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80">
+    <div id="navbar">
+        <img id="logo" src="https://images.creativemarket.com/0.1.0/ps/7414066/1820/1214/m1/fpnw/wm1/logo-design-for-movie-production-company-01-.jpg?1575502358&s=c37b3e6a8863b415070b669f6c8a457c" />
+        <div id="links">
+            <a href="">HOME</a>
+            <a href="loginpage.html">LOGIN</a>
+            <a href="signup.html">SIGNUP</a>
+        </div>
+    </div>
+
+    <div id="signDiv">
+        <h1>SIGNUP</h1>
+        <form id="signup">
+            <label for="name" id="name">Name </label><span> *</span>
+            <input id="name" type="text" />
+
+            <label for="email" id="email">Email </label><span> *</span>
+            <input id="email" type="mail" />
+            <label for="username" id="username">Username</label><span> *</span>
+            <input id="username" type="text" />
+            <label for="number" id="number">Mobile Number</label>
+            <input id="number" type="tel" />
+            <label for="password" id="password">Password </label><span> *</span>
+            <input id="password" type="password" />
+            <label for="repeatpassword" id="repeatpassword">Confirm Password </label
+        ><span> *</span>
+        <input id="repeatpassword" type="password" />
+      </form>
+      <button onclick="signup()">SIGNUP</button>
+
+      <p>Already have an Account?</p>
+      <button onclick="login()">SIGNIN</button>
+    </div>
+  </body>
+</html>
+
+<script src="signup.js"></script>
