@@ -50,12 +50,15 @@ async function requestMovies() {
 
 function appendData(data) {
     movie_container.innerHTML = null;
+    let h1 = document.createElement("h1");
     if (data.Error == "Movie not found!") {
         let div = document.createElement("img");
+        div.style.width = "600px";
+        div.style.height = "700px";
         div.src =
             "https://in.bmscdn.com/iedb/movies/images/website/poster/large/keep-smiling--gaigiment--et00017432-24-03-2017-18-45-49.jpg";
-
-        movie_container.append(div);
+        h1.innerHTML = "No Movie Found";
+        movie_container.append(h1, div);
     } else {
         let div = document.createElement("div");
 
