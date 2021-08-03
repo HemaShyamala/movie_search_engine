@@ -100,6 +100,15 @@ function appendData(data) {
             release,
             language
         );
+
+        if (data.imdbRating >= 8.5) {
+            let recommend = document.createElement("div");
+            recommend.innerHTML = "Recommended";
+            recommend.style.backgroundColor = "pink";
+            recommend.style.width = "40%";
+            recommend.style.margin = "auto";
+            movie_container.append(recommend);
+        }
         movie_container.append(div);
     }
 }
